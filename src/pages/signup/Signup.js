@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import './Signup.css';
@@ -105,8 +106,9 @@ function Signup() {
 
           <button type="submit" className="register-btn">Зарегистрироваться</button>
         </form>
-
-        <p className="login-link">У вас уже есть аккаунт? <a href="#">Войти</a></p>
+        <Link to="/login">
+          <p className="login-link">У вас уже есть аккаунт? <a href="#">Войти</a></p>
+        </Link>
       </div>
     </div>
   );

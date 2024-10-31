@@ -1,0 +1,142 @@
+.login {
+    display: flex;
+
+    width: 100vw;
+    height: auto;
+
+    position: relative;
+}
+
+.login-block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0rem 2rem;
+    width: 40%;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+}
+
+.google-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+}
+
+.google-login-btn img {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.registration-form label {
+    display: none;
+}
+
+.registration-form input {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reset-password{
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: end;
+}
+
+.register-btn {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-link {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.login-link a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 550px) {
+    .block1 {
+        display: none;
+    }
+
+    .login {
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .login-block2 {
+        width: auto;
+    }
+}

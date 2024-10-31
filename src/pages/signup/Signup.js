@@ -106,9 +106,7 @@ function Signup() {
 
           <button type="submit" className="register-btn">Зарегистрироваться</button>
         </form>
-        <Link to="/login">
-          <p className="login-link">У вас уже есть аккаунт? <a href="#">Войти</a></p>
-        </Link>
+        <p className="login-link">У вас уже есть аккаунт? <Link to="/login">Войти</Link></p>
       </div>
     </div>
   );

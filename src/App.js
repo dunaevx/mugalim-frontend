@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
-import { Welcome, Login, Signup, Notfound } from './pages'
+import { Welcome, Login, Signup, Notfound, ResetPassword } from './pages'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Route path='welcom' element={<Welcome />} />
           <Route path='signup' element={<Signup />} />
           <Route path='login' element={<Login />} />
+          <Route path='reset-password' element={<ResetPassword />} />
           
           <Route path='*' element={<Notfound />} />
         </Routes>

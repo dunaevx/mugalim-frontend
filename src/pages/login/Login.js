@@ -73,7 +73,7 @@ function Login() {
             </span>
           </div>
           {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
-          <p className="reset-password"> <Link to="/login">Забыли пароль?</Link></p>
+          <p className="reset-password"> <Link to="/reset-password">Забыли пароль?</Link></p>
           <button type="submit" className="register-btn">Войти</button>
         </form>
 

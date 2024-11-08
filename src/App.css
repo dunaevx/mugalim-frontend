@@ -10,6 +10,17 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    background-color: #ffffff88;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #9494946b;
+    width: 5px;
+}
+
 @media screen and (max-width: 700px) {
     .section__padding {
         padding: 4rem;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import './Login.css';
@@ -9,13 +10,27 @@ import google from '../../assets/Social media logo.svg';
 function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+
+
+    try {
+      const response = await axios.get('/test', {
+        auth: {
+          username: data.email,
+          password: data.password,
+        }
+      });
+
+      console.log('Ответ сервера:', response.data);
+    } catch (error) {
+      console.error('Ошибка при выполнении запроса:', error);
+    }
   };
 
   return (
